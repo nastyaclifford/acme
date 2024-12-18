@@ -23,7 +23,7 @@ export default function BlockLearnMore() {
         </div>
         <div className={styles.button_container}>
           <a href='https://unco.bio/ru'>
-            <Buttons firstLine='Lern' secondLine='More' />
+            <Buttons firstLine='Learn' secondLine='More' />
           </a>
         </div>
       </div>

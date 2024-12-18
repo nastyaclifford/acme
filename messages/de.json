@@ -12,6 +12,9 @@
   "info-banner1": {
     "title": "Kümmern Sie sich um Ihre Eltern",
     "text": "Wenn Menschen mit älteren Eltern sie nicht häufig besuchen oder mit ihnen kommunizieren, kann dies mehrere negative Auswirkungen auf die Gesundheit und das Wohlbefinden ihrer Eltern haben.",
+    "substr": 
+      "Traurigkeit,; Hoffnungslosigkeit Wertlosigkeit; Alzheimer.; schlechter Hygiene,; Vernachlässigung von Medikamenten,; schlechter Ernährung"
+    ,
     "section-1": {
       "subtitle-1": "Erhöhtes Risiko für Depressionen",
       "text-1": "Einsamkeit ist eine der Hauptursachen für Depressionen bei älteren Erwachsenen. Wenn ältere Menschen isoliert sind oder sich verlassen fühlen, können sie Gefühle von Traurigkeit, Hoffnungslosigkeit und Wertlosigkeit entwickeln."  

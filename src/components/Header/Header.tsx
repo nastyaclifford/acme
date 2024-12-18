@@ -1,19 +1,18 @@
 'use client'
 import { useTranslations } from 'next-intl';
 import ButtonLanguages from './ButtonLanguages';
-import BurgerMenu from './BurgerMenu';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from "./Header.module.scss";
 
 const languagesList = [
-    { text: 'English', code: 'en' },
-    { text: 'Русский', code: 'ru'},
-    { text: 'Deutsche', code: 'de'},
-    { text: 'Українська', code: 'uk' },
-    { text: 'Français', code: 'fr' },
-    { text: 'Español', code: 'es' },
-    { text: 'Italiano', code: 'it'},
+    { text: 'English', code: 'en', img: '/images/Header/united-states.svg' },
+    { text: 'Русский', code: 'ru', img: '/images/Header/russia.svg' },
+    { text: 'Deutsche', code: 'de', img: '/images/Header/germany.svg' },
+    { text: 'Українська', code: 'uk', img: '/images/Header/ukraine.svg' },
+    { text: 'Français', code: 'fr', img: '/images/Header/france.svg' },
+    { text: 'Español', code: 'es', img: '/images/Header/spain.svg' },
+    { text: 'Italiano', code: 'it', img: '/images/Header/italy.svg' },
   ];
 
 export default function Header () {
@@ -37,17 +36,6 @@ export default function Header () {
         <Link href="#contactUs"><button className={styles.nav_item__button}>{t('button')}</button></Link>
         
     </div>
-
-    <div className={styles.navMobile}>
-    <div className={styles.navMobile_item}>Phone</div>
-    <div onClick={handleLogoClick} className={styles.navMobile_item}>
-        <Image  src='/images/Header/logo.png' alt='logo' width={136} height={81} />
-        </div>
-    <div className={styles.navMobile_item}>
-        {/* <BurgerMenu/> */}
-    </div>
-    </div>
-  
     </div>
     
 }

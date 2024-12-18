@@ -5,7 +5,7 @@ import Image from 'next/image';
 import styles from "./Header.module.scss";
 import { useRouter, usePathname  } from '@/i18n/routing';
 
-type MenuItem = { text: string; code: string };
+type MenuItem = { text: string; code: string; img: string };
 
 type Props = {
   menu: MenuItem[];

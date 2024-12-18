@@ -1,6 +1,10 @@
 import styles from './InfoBanner2.module.scss';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
+
 export default function InfoBanner2() {
+  const t = useTranslations('info-banner2');
+
   return (
     <>
       <div className={styles.container_gift}>
@@ -15,25 +19,15 @@ export default function InfoBanner2() {
           />
         </div>
 
-        <h2 className={styles.title}>
-          Gift your parents meaningful leisure that helps reduce health risks
-        </h2>
+        <h2 className={styles.title}>{t('section-1.title-1')}</h2>
 
-        <p className={styles.text}>
-          An UNCO eco-point is where villagers pick up fresh groceries, fruits, and vegetables
-          delivered directly from local farmers. We’re inviting retired people in small villages to
-          host eco-points, bringing neighbors together.
-        </p>
+        <p className={styles.text}>{t('section-1.text-1')}</p>
       </div>
-      <div className={styles.steps}>
+      <div className={styles.steps} id='infoBanner2'>
         <div className={styles.steps_container}>
           <div className={styles.steps_info}>
-            <h2 className={styles.steps_title}>How you can do it?</h2>
-            <p className={styles.steps_text}>
-              By opening an eco-point in your parents' house, you’ll help neighbors get fresh, local
-              groceries while also creating a space for conversations and social interactions. It
-              only takes two easy steps:
-            </p>
+            <h2 className={styles.steps_title}>{t('section-2.title-2')}</h2>
+            <p className={styles.steps_text}>{t('section-2.text-2')}</p>
           </div>
 
           <div className={styles.steps_grid}>
@@ -48,16 +42,12 @@ export default function InfoBanner2() {
               />
             </div>
             <div className={styles.step1}>
-              <h2 className={styles.step1_title}>First step:</h2>
-              <p className={styles.step1_text}>
-                Show the courier where the ordered groceries can be unloaded.
-              </p>
+              <h2 className={styles.step1_title}>{t('section-3.subsection-1.title-1')}</h2>
+              <p className={styles.step1_text}>{t('section-3.subsection-1.text-1')}</p>
             </div>
             <div className={styles.step2}>
-              <h2 className={styles.step2_title}>Second step:</h2>
-              <p className={styles.step2_text}>
-                Let your neighbors know where to pick up their orders.
-              </p>
+              <h2 className={styles.step2_title}>{t('section-3.subsection-2.title-2')}</h2>
+              <p className={styles.step2_text}>{t('section-3.subsection-2.text-2')}</p>
             </div>
             <div className={styles.step_image2}>
               <Image

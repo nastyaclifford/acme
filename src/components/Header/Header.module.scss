@@ -29,6 +29,37 @@
                 cursor: pointer;
         }
 
+/*         &__languages{
+          position: relative;
+        }
+
+        &__languagesMenu{
+          position: absolute;
+          top: 4rem;
+          left: 0;
+          background-color: #fff;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+          padding: 10px;
+          width: 9rem;
+
+  ul {
+      list-style: none;
+      text-align: center;
+  }
+
+  li {
+      @include p1;
+      font-size: 14px;
+      color: #303424;
+      cursor: pointer;
+  }
+
+  li:hover {
+    font-weight: 600;;
+  }
+        } */
+
         &__button{
           @include menu;
           color:#FFFFFF;
@@ -48,10 +79,6 @@
           
         }
     }
-    }
-
-    .navMobile{
-      display:none;
     }
 }
 
@@ -89,17 +116,9 @@
 
 
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 376px) and (max-width: 768px) {
     .header {
       background-image: url('/images/Intro/intro_middle.png');
-
-      .nav{
-        display:none;
-      }
-
-      .navMobile{
-        display: block;
-      }
     }
   }
   
