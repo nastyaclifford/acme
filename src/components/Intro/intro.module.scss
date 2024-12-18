@@ -1,0 +1,55 @@
+@use '../../styles/variables' as *;
+
+/* .intro_image {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/images/Intro/intro.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 6.25rem;
+}
+ */
+.intro_title {
+  @include heading2;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  color: $light-black;
+}
+
+.intro_text {
+  @include p1;
+  width: 48.75rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 10rem;
+  color: $light-black;
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .intro_image {
+    background-image: url('/images/Intro/intro_middle.png');
+  }
+
+  .intro_text {
+    width: 90vw;
+    margin-bottom: 6.25rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .intro_image {
+    background-image: url('/images/Intro/intro_mini.png');
+    margin-bottom: 2.5rem;
+  }
+
+  .intro_title {
+    margin-bottom: 1.5rem;
+  }
+
+  .intro_text {
+    width: 95vw;
+    margin-bottom: 5rem;
+  }
+}

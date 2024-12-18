@@ -1,0 +1,38 @@
+@use '../../styles/variables' as *;
+
+.lernmore_container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80vw;
+}
+.lernmore_text {
+  @include p2;
+  width: 71%;
+  margin-right: 5%;
+}
+
+.lernmore_text p {
+  margin-bottom: 3%;
+}
+
+.button_container {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 359px) and (max-width: 768px) {
+  .lernmore_container {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100vw;
+  }
+  .lernmore_text {
+    margin: 0 auto;
+  }
+
+  .button_container {
+    margin: 0 auto;
+    padding: 7%;
+  }
+}

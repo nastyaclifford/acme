@@ -1,0 +1,112 @@
+@import "../../styles/variables.scss";
+
+.header{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('/images/Intro/intro.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 6.25rem; 
+
+    .nav{
+        position: fixed;
+        top:0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 2.5rem;
+    
+        &_item{
+            @include menu;
+    
+            &:hover{
+                text-decoration: underline;
+                cursor: pointer;
+        }
+
+        &__button{
+          @include menu;
+          color:#FFFFFF;
+          width: 16.25rem;
+          height: 4.4rem;
+          box-shadow: 2px 3px 8px #303424B2;
+          background-color: #BC0051B2;
+          border: 2px solid $burgundy;
+          border-radius: 24px;
+
+          &:hover{
+            cursor: pointer;
+            background-color: #8CB80014;
+            color:#303424;
+            text-decoration: underline;
+    }
+          
+        }
+    }
+    }
+
+    .navMobile{
+      display:none;
+    }
+}
+
+.languages{
+  position: relative;
+
+  &_menu{
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    width: 9rem;
+  
+  ul {
+  list-style: none;
+  text-align: center;
+  }
+  
+  li {
+  @include p1;
+  font-size: 14px;
+  color: #303424;
+  cursor: pointer;
+  }
+  
+  li:hover {
+  font-weight: 600;;
+  }
+  }
+}
+
+
+
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .header {
+      background-image: url('/images/Intro/intro_middle.png');
+
+      .nav{
+        display:none;
+      }
+
+      .navMobile{
+        display: block;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 375px) {
+    .header {
+      background-image: url('/images/Intro/intro_mini.png');
+      margin-bottom: 2.5rem;
+    }
+  }
+
