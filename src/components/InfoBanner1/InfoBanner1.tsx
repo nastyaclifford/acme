@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect } from 'react';
-import styles from './infoBanner1.module.scss';
+import styles from './InfoBanner1.module.scss';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
